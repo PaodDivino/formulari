@@ -1,0 +1,97 @@
+/* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin: 0;
+    background-color: #484747;
+    color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+}
+
+/* O "quadrado" centralizado - ajusta a altura aqui */
+main {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    width: 400px; /* A largura permanece a mesma (podes ajustar) */
+    height: 400px; /* Altura fixa para o quadrado, ajusta conforme necessário */
+    overflow-y: auto; /* Se o conteúdo for maior que a altura, permite o scroll */
+    text-align: center;
+    color: black; /* Texto dentro do "main" será preto para maior legibilidade */
+    border: 2px solid white; /* Borda branca para a caixa principal */
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para os campos do formulário */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid blue; /* Borda azul para os campos de entrada */
+    border-radius: 4px;
+    color: black; /* Texto dentro dos campos será preto */
+    background-color: #f9f9f9; /* Cor de fundo dos campos para contraste */
+}
+
+/* Estilo para o botão */
+button {
+    padding: 10px 20px;
+    background-color: #322b91; /* Cor verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #18196a; /* Cor verde mais escura ao passar o mouse */
+}
+
+/* Ajustar os elementos de texto e labels */
+label {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white; /* Labels também terão texto branco */
+}
+
+/* Para as opções radio (cor dos olhos) e checkbox (animais de estimação) */
+input[type="radio"],
+input[type="checkbox"],
+select {
+    margin-right: 10px; /* Espaçamento entre as opções */
+}
+input[type="radio"],
+input[type="checkbox"]{
+    transform: scale(1.5); /* Aumenta o tamanho das bolas e quadrados */
+}
+
+
+
+/* Agrupar as opções lado a lado */
+div.option-group {
+    display: flex;
+    justify-content: space-around; /* Espalha as opções igualmente */
+    width: 100%; /* Certifica-se que ocupa toda a largura disponível */
+    margin: 10px 0;
+}
+
+div.option-group label {
+    margin: 0; /* Remove margem das labels para que fiquem coladas às opções */
+    font-weight: normal; /* Para não ficar muito destacado */
+    color: white; /* Labels das opções também terão texto branco */
+}
